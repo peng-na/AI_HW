@@ -1,12 +1,14 @@
 # Violence Image Classification Interface
 
-This repository contains the `ViolenceClass` interface for classifying images as either containing violence or not. The model is based on EfficientNet-B3 and uses PyTorch Lightning for training and inference.
+This repository contains the `ViolenceClass` interface for classifying images as either containing violence or not. The model is based on EfficientNet-B3 and uses PyTorch for inference.
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Interface Description](#interface-description)
 - [Example](#example)
+- [Requirements](#requirements)
+- [License](#license)
 
 ## Installation
 
@@ -58,4 +60,3 @@ class ViolenceClass:
             list: Predicted classes for each input image.
         """
         ...
-
