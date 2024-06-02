@@ -95,3 +95,10 @@ python example_script.py
 ```
 
 ## Requirements
+
+* Python 3.8+
+* torch
+* torchvision
+* efficientnet-pytorch
+* pillow
+
