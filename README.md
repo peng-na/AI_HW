@@ -5,8 +5,8 @@ This repository contains the `ViolenceClass` interface for classifying images as
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Interface Description](#interface-description)
-- [Example](#example)
+    - [Interface Description](#interface-description)
+    - [Example](#example)
 - [Requirements](#requirements)
 - [License](#license)
 
@@ -60,11 +60,38 @@ class ViolenceClass:
             list: Predicted classes for each input image.
         """
         ...
+```
 
 ### Example
 
 Here is an example of how to use the ViolenceClass interface:
-
 1. Ensure you have a trained model checkpoint file, e.g., efficientnet_b3.ckpt.
-
 2. Create a script to use the ViolenceClass:
+
+```python
+import torch
+from classify import ViolenceClass
+
+# Path to the model checkpoint file
+model_checkpoint_path = 'path/to/efficientnet_b3.ckpt'
+
+# Instantiate the classifier
+classifier = ViolenceClass(model_checkpoint_path)
+
+# Create a batch of example images (n, 3, 224, 224)
+example_images = torch.rand(4, 3, 224, 224)  # Example input: 4 randomly generated images
+
+# Classify the images
+predictions = classifier.classify(example_images)
+
+# Print the predictions
+print(predictions)  # Output: [0, 1, 0, 1] (example output)
+```
+
+3. Run the script:
+
+```sh
+python example_script.py
+```
+
+## Requirements
