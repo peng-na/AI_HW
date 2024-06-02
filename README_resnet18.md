@@ -6,7 +6,7 @@ This repository contains the `ViolenceClass` interface for classifying images as
 - [Installation](#installation)
 - [Usage](#usage)
     - [Interface Description](#interface-description)
-- [Example](#example)
+    - [Example](#example)
 - [Requirements](#requirements)
 
 ## Installation
@@ -61,7 +61,7 @@ class ViolenceClass:
         ...
 ```
 
-## Example
+### Example
 
 Here is an example of how to use the ViolenceClass interface:
 1.Ensure you have a trained model checkpoint file, e.g., resnet18_checkpoint.pth.
