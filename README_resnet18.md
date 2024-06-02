@@ -64,7 +64,9 @@ class ViolenceClass:
 ### Example
 
 Here is an example of how to use the ViolenceClass interface:
+
 1.Ensure you have a trained model checkpoint file, e.g., resnet18_checkpoint.pth.
+
 2.Create a script to use the ViolenceClass:
 
 ```python
