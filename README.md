@@ -60,3 +60,11 @@ class ViolenceClass:
             list: Predicted classes for each input image.
         """
         ...
+
+### Example
+
+Here is an example of how to use the ViolenceClass interface:
+
+1. Ensure you have a trained model checkpoint file, e.g., efficientnet_b3.ckpt.
+
+2. Create a script to use the ViolenceClass:
